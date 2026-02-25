@@ -1,0 +1,142 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 48px 0 48px;
+  background: #fff;
+}
+
+.logo {
+  font-size: 2.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  letter-spacing: -2px;
+}
+.logo-black {
+  color: #222;
+}
+.logo-red {
+  color: #e53935;
+}
+
+.main-nav {
+  margin-top: 10px;
+}
+.main-nav a {
+  color: #444;
+  text-decoration: underline;
+  margin-left: 18px;
+  font-size: 1.1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.main-nav a:first-child {
+  margin-left: 0;
+}
+
+.categories-title {
+  font-size: 2.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #444;
+  margin: 48px 0 24px 80px;
+}
+
+.categories-outer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  padding: 0 20px 24px;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.category-card {
+  background: #888;
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 8px;
+  padding: 38px 12px;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80px;
+  text-align: center;
+}
+.category-card:hover {
+  background: #666;
+}
+
+@media (max-width: 900px) {
+  .categories-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .main-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px 12px 0 12px;
+  }
+  .categories-title {
+    margin-left: 20px;
+  }
+  .categories-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+h1 {
+  text-align: center;
+  margin-top: 40px;
+  color: #333;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin: 40px auto;
+  max-width: 900px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 32px 24px;
+  width: 250px;
+  text-align: center;
+  transition: box-shadow 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.16);
+}
+
+.card h2 {
+  margin-top: 0;
+  color: #1976d2;
+}
+
+.card p {
+  color: #555;
+}
