@@ -5,10 +5,6 @@ console.log("Kategori:", kategori);
 
 const container = document.querySelector(".product-grid");
 
-if (!kategori) {
-  console.error("Ingen kategori fundet i URL");
-}
-
 const endpoint = `https://kea-alt-del.dk/t7/api/products?category=${kategori}`;
 
 function getData() {
@@ -27,7 +23,7 @@ function showData(data) {
       <article class="product-card ${element.soldout ? "is-soldout" : ""} ${
         element.discount ? "is-offer" : ""
       }">
-        <a href="product.html?id=${element.id}">
+        <a href="productDetails.html?id=${element.id}">
           <div class="image-wrapper">
             ${element.soldout ? `<span class="sold-label">Udsolgt</span>` : ""}
 
