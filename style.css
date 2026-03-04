@@ -1,3 +1,76 @@
+.product-image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.product-image-large {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 16px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.10);
+}
+
+.price-block {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.price-block .price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #e53935;
+}
+
+.price-block .discount {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #37474f;
+  background: #ffd6d6;
+  border-radius: 8px;
+  padding: 4px 10px;
+}
+
+.stock-status {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #388e3c;
+  margin-bottom: 18px;
+}
+.stock-status:contains('Ikke på lager') {
+  color: #d32f2f;
+}
+
+.add-to-basket {
+  display: inline-block;
+  background: #e53935;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 32px;
+  margin-bottom: 24px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.add-to-basket:hover {
+  background: #b71c1c;
+}
+
+.category {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 1rem;
+  color: #333;
+}
 /* ================= BASE ================= */
 
 body {

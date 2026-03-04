@@ -23,7 +23,7 @@ function showData(data) {
       <article class="product-card ${element.soldout ? "is-soldout" : ""} ${
         element.discount ? "is-offer" : ""
       }">
-        <a href="productDetails.html?id=${element.id}">
+        <a href="product.html?id=${element.id}">
           <div class="image-wrapper">
             ${element.soldout ? `<span class="sold-label">Udsolgt</span>` : ""}
 
